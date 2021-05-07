@@ -9,7 +9,7 @@ var app = new Vue ({
   },
   mounted () {
     let origine = this
-    axios.get('http://localhost/php-ajax-dischi/milestone-2/api/music.php')
+    axios.get('https://flynn.boolean.careers/exercises/api/array/music')
     .then(function (response) {
     origine.albums = response.data.response;
     console.log(origine.albums);
